@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class banco {
         private static File arquivo = new File("C:\\Users\\vitor\\OneDrive\\area\\prog");
 
-        public static Conta cadastraConta(){
+        public static conta cadastraConta(){
             System.out.println("Cadastro de conta");
             System.out.print("Qual o titular: ");
             String titular = new Scanner(System.in).next();
@@ -13,10 +13,10 @@ public class banco {
             String senha = new Scanner(System.in).next();
             System.out.print("Qual o deposito inicial: ");
             float valor = new Scanner(System.in).nextFloat();
-            return new Conta(titular, senha, valor);
+            return new conta(titular, senha, valor);
         }
 
-        public static Conta acessaConta(Conta c1){
+        public static conta acessaConta(conta c1){
             System.out.println("Acessando a conta "+c1.identificador);
             char opc;
             do{
@@ -50,7 +50,7 @@ public class banco {
 
         public static void main(String[] args) {
             Scanner ler = new Scanner(System.in);
-            Conta[] lista = new Conta[10];
+            conta[] lista = new conta[10];
             int cont = 0;
             char opc;
             do{

@@ -8,13 +8,13 @@ public class conta {
         String senha;
         float saldo;
 
-        public Conta(String titular, String senha, float saldo){
+        public conta(String titular, String senha, float saldo){
             geraIdentificador();
             this.titular = titular;
             this.senha = senha;
             this.saldo = saldo;
         }
-        public Conta(String titular){
+        public conta(String titular){
             geraIdentificador();
             this.titular = titular;
         }
